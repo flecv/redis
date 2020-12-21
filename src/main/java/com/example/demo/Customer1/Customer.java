@@ -1,4 +1,4 @@
-package Customer;
+package com.example.demo.Customer1;
 
 public class Customer {
 

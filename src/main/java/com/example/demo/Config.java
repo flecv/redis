@@ -1,4 +1,6 @@
-import Customer.Customer;
+package com.example.demo;
+
+import com.example.demo.Customer1.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

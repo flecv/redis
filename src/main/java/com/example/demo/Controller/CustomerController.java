@@ -1,12 +1,12 @@
-package Controller;
+package com.example.demo.Controller;
 
 
-import Customer.Customer;
+import com.example.demo.Customer1.Customer;
+import com.example.demo.repository.CustomerRepo;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import repository.CustomerRepo;
 
 @RestController
 @RequestMapping(value = "customer")

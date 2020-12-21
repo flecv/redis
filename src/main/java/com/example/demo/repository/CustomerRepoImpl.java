@@ -1,6 +1,6 @@
-package repository;
+package com.example.demo.repository;
 
-import Customer.Customer;
+import com.example.demo.Customer1.Customer;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
@@ -14,7 +14,7 @@ public class CustomerRepoImpl implements CustomerRepo{
     public CustomerRepoImpl(RedisTemplate<String, Customer> redisTemplate) {
         this.redisTemplate = redisTemplate;
 
-        hashOperations = redisTemplate.opsForHash();
+        this.hashOperations = redisTemplate.opsForHash();
     }
     @Override
     public Customer findById(String id) {
