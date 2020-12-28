@@ -17,8 +17,8 @@ import javax.annotation.Resource;
 @PropertySource("classpath:application.properties")
 public class Config {
     @Autowired
-    private Environment env;
-    @Resource
+    //private Environment env;
+    //@Resource
     private Environment environment;
     @Value("${spring.datasource.username}")
     private String Username;
@@ -46,7 +46,7 @@ public class Config {
     @Bean
     public DriverManagerDataSource getDataSource() {
         final DriverManagerDataSource  ds = new DriverManagerDataSource();
-        ds.setDriverClassName("com.postgres.jdbc.Driver");
+        ds.setDriverClassName("org.postgresql.Driver");
         ds.setUrl(Url);
         ds.setUsername(Username);
         ds.setPassword(Password);
